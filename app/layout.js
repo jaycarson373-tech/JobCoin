@@ -1,9 +1,9 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "$LOTTO | No Forms. No Filing. Just Winners.",
+  title: "Job Coin | AI Took Your Job. Come Work For The Coin.",
   description:
-    "Official on-chain registry, live prize pool, public record, and holder ticket lookup for the $LOTTO Solana lottery program.",
+    "Job Coin uses creator fees to buy back JOB and pay verified workers building the coin.",
 };
 
 export default function RootLayout({ children }) {
