@@ -160,6 +160,24 @@ a:hover {
   margin: 0 4px;
 }
 
+.nav-cta {
+  padding: 8px 16px;
+  background: transparent;
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 8px;
+  transition: all 0.15s;
+  text-decoration: none;
+}
+
+.nav-cta:hover {
+  background: #e8f4fd;
+  text-decoration: none;
+}
+
 .nav-profile {
   display: flex;
   flex-direction: column;
@@ -263,11 +281,44 @@ a:hover {
   cursor: pointer;
 }
 
+.profile-title {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 4px 0 0;
+  font-weight: 500;
+}
+
 .profile-headline {
   font-size: 12px;
   color: var(--text-secondary);
   margin: 4px 0 0;
   line-height: 1.33;
+}
+
+.open-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #ddf4e4;
+  color: var(--green);
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--green);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
 }
 
 .profile-divider {
@@ -301,6 +352,81 @@ a:hover {
 .stat-value {
   color: var(--blue);
   font-weight: 600;
+}
+
+/* Steps Panel */
+.steps-panel {
+  padding: 16px;
+}
+
+.steps-header {
+  margin-bottom: 12px;
+}
+
+.steps-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--text);
+}
+
+.steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.step-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background 0.15s;
+}
+
+.step-item:hover {
+  background: var(--surface-hover);
+}
+
+.step-item.highlight {
+  background: #fff9e6;
+  border: 1px solid #f0c000;
+}
+
+.step-number {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--blue);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.step-item.highlight .step-number {
+  background: #f0c000;
+  color: #333;
+}
+
+.step-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.step-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.step-desc {
+  font-size: 12px;
+  color: var(--text-secondary);
 }
 
 /* Side Panel */
@@ -567,6 +693,21 @@ a:hover {
   margin: 0;
 }
 
+.post-highlight {
+  font-size: 14px;
+  color: var(--blue);
+  font-weight: 600;
+  margin: 12px 0 0;
+  padding: 12px;
+  background: #e8f4fd;
+  border-radius: 8px;
+  border-left: 4px solid var(--blue);
+}
+
+.verified-avatar {
+  background: linear-gradient(135deg, var(--green), #045030) !important;
+}
+
 .post-metrics {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -785,6 +926,52 @@ a:hover {
   height: 1px;
   background: var(--line);
   margin: 8px 0;
+}
+
+/* Trending Panel */
+.trending-panel {
+  padding: 12px;
+}
+
+.trending-header {
+  margin-bottom: 8px;
+}
+
+.trending-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--text);
+}
+
+.trending-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.trending-item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 8px;
+  border-radius: 8px;
+  transition: background 0.15s;
+  text-decoration: none;
+}
+
+.trending-item:hover {
+  background: var(--surface-hover);
+  text-decoration: none;
+}
+
+.trending-tag {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--blue);
+}
+
+.trending-count {
+  font-size: 12px;
+  color: var(--text-secondary);
 }
 
 /* CTA Panel */

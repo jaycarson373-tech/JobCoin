@@ -4,14 +4,14 @@ export default function HomePage() {
       <header className="site-header">
         <div className="shell topbar">
           <a className="brand" href="#top">
-            <div className="brand-icon">in</div>
+            <div className="brand-icon">J</div>
           </a>
 
           <div className="search-box">
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.39zM11 18a7 7 0 1 1 7-7 7 7 0 0 1-7 7z"/>
             </svg>
-            <input type="text" placeholder="Search" />
+            <input type="text" placeholder="Search JOB" />
           </div>
 
           <div className="nav-spacer" />
@@ -27,22 +27,31 @@ export default function HomePage() {
               <svg viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 16v6H3v-6a3 3 0 0 1 3-3h3a3 3 0 0 1 3 3zm5.5-3A3.5 3.5 0 1 0 14 9.5a3.5 3.5 0 0 0 3.5 3.5zm1 2h-2a2.5 2.5 0 0 0-2.5 2.5V22h7v-4.5a2.5 2.5 0 0 0-2.5-2.5zM7.5 2A4.5 4.5 0 1 0 12 6.5 4.49 4.49 0 0 0 7.5 2z"/>
               </svg>
-              <span>Workers</span>
+              <span>Network</span>
             </a>
             <a href="#verified" className="nav-item">
               <svg viewBox="0 0 24 24" fill="currentColor">
                 <path d="M17 6V5a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3v1H2v4a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V6zM9 5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1H9zm10 9a4 4 0 0 1-4 4h-6a4 4 0 0 1-4-4v-1h14z"/>
               </svg>
-              <span>Jobs</span>
+              <span>Roles</span>
             </a>
             <a href="#buy" className="nav-item">
               <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.93V18h-2v-1.07A4 4 0 0 1 8 13h2a2 2 0 1 0 2-2 4 4 0 0 1 1-7.93V2h2v1.07A4 4 0 0 1 16 7h-2a2 2 0 1 0-2 2 4 4 0 0 1 1 7.93z"/>
+                <path d="M22 17H2a5 5 0 0 1-2-4v-2a1 1 0 0 1 1-1h22a1 1 0 0 1 1 1v2a5 5 0 0 1-2 4zM2 7a5 5 0 0 1 2-4h16a5 5 0 0 1 2 4z"/>
               </svg>
-              <span>Buy JOB</span>
+              <span>Alerts</span>
             </a>
 
             <div className="nav-divider" />
+
+            <a 
+              href="https://pump.fun/coin/8sXvPdXVfNgfnuVWnJvfyC6mP71p5LPAi3RiVSpump" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="nav-cta"
+            >
+              Get Started
+            </a>
 
             <div className="nav-profile">
               <div className="nav-avatar">J</div>
@@ -63,34 +72,64 @@ export default function HomePage() {
             <div className="profile-cover" />
             <div className="profile-content">
               <div className="profile-avatar">J</div>
-              <h1 className="profile-name">Job Coin</h1>
-              <p className="profile-headline">AI took your job. Come work for the coin.</p>
+              <h1 className="profile-name">JOB</h1>
+              <p className="profile-title">Work For Your Coin</p>
+              <p className="profile-headline">The job you already do. Now it pays.</p>
+              
+              <div className="open-badge">
+                <span className="badge-dot" />
+                Hiring workers - Earn JOB tokens
+              </div>
               
               <div className="profile-divider" />
               
               <div className="profile-stats">
                 <div className="stat-row">
-                  <span className="stat-label">Verified workers</span>
+                  <span className="stat-label">Active workers</span>
                   <span className="stat-value">27</span>
                 </div>
                 <div className="stat-row">
-                  <span className="stat-label">Payroll this cycle</span>
-                  <span className="stat-value">182,500 JOB</span>
+                  <span className="stat-label">Connections</span>
+                  <span className="stat-value">420K+</span>
                 </div>
               </div>
             </div>
           </section>
 
-          <section className="card side-panel">
-            <div className="side-panel-header">
-              <h2 className="side-panel-title">How it works</h2>
+          <section className="card steps-panel">
+            <div className="steps-header">
+              <h2 className="steps-title">Get Started</h2>
             </div>
-            <ol className="side-list">
-              <li>Buy JOB tokens</li>
-              <li>Get verified as a worker</li>
-              <li>Work for the coin</li>
-              <li>Get paid in JOB</li>
-            </ol>
+            <div className="steps-list">
+              <div className="step-item">
+                <div className="step-number">1</div>
+                <div className="step-content">
+                  <span className="step-label">Join</span>
+                  <span className="step-desc">Enter via the community</span>
+                </div>
+              </div>
+              <div className="step-item">
+                <div className="step-number">2</div>
+                <div className="step-content">
+                  <span className="step-label">Contribute</span>
+                  <span className="step-desc">Post, share, and engage</span>
+                </div>
+              </div>
+              <div className="step-item">
+                <div className="step-number">3</div>
+                <div className="step-content">
+                  <span className="step-label">Earn</span>
+                  <span className="step-desc">Get paid in JOB tokens</span>
+                </div>
+              </div>
+              <div className="step-item highlight">
+                <div className="step-number">4</div>
+                <div className="step-content">
+                  <span className="step-label">Top Performer</span>
+                  <span className="step-desc">Bonus rewards for standouts</span>
+                </div>
+              </div>
+            </div>
           </section>
 
           <section className="card side-panel">
@@ -150,8 +189,8 @@ export default function HomePage() {
             <div className="post-header">
               <div className="post-avatar">J</div>
               <div className="post-meta">
-                <div className="post-author">Job Coin</div>
-                <div className="post-author-detail">AI took your job. Come work for the coin.</div>
+                <div className="post-author">JOB Token</div>
+                <div className="post-author-detail">Work For Your Coin</div>
                 <div className="post-time">
                   Pinned
                   <span>{"·"}</span>
@@ -167,10 +206,14 @@ export default function HomePage() {
               </div>
             </div>
             <div className="post-content">
-              <h3 className="post-title">Turn the coin into the company.</h3>
+              <h3 className="post-title">The company is the coin. The workers are the team.</h3>
               <p className="post-text">
-                Job Coin is built around one loop: creator fees buy back JOB, the treasury pays
-                verified workers, and workers keep pushing the coin because the upside is visible.
+                Creator fees flow back to buy JOB. The treasury pays verified workers. 
+                Workers keep pushing because upside is visible and real. This is not a 9-5. 
+                This is the work you already do online - now it actually pays.
+              </p>
+              <p className="post-highlight">
+                Work for the coin. Get paid by the coin.
               </p>
             </div>
             <div className="post-metrics">
@@ -233,7 +276,7 @@ export default function HomePage() {
             </div>
             <div className="post-content">
               <p className="post-text">
-                People should instantly see workers getting paid. Transparency builds trust.
+                Transparency builds trust. Every payout is visible. See exactly who gets paid and why.
               </p>
             </div>
             <div className="post-metrics">
@@ -322,10 +365,10 @@ export default function HomePage() {
 
           <article className="card post" id="verified">
             <div className="post-header">
-              <div className="post-avatar">V</div>
+              <div className="post-avatar verified-avatar">V</div>
               <div className="post-meta">
                 <div className="post-author">Verified Workers</div>
-                <div className="post-author-detail">No badge, no fees. Get verified to start earning.</div>
+                <div className="post-author-detail">No badge, no payout. Get verified to start earning.</div>
                 <div className="post-time">2h ago</div>
               </div>
             </div>
@@ -392,27 +435,51 @@ export default function HomePage() {
         <aside className="right-rail">
           <section className="card jobs-card" id="jobs">
             <div className="jobs-header">
-              <h2 className="jobs-title">Open jobs for you</h2>
+              <h2 className="jobs-title">Open roles</h2>
             </div>
             <div className="job-item">
               <h3 className="job-title">Content Operator</h3>
-              <p className="job-company">Job Coin</p>
-              <p className="job-location">Remote - Verified</p>
+              <p className="job-company">JOB Token</p>
+              <p className="job-location">Decentralized - Remote</p>
               <p className="job-posted">Actively hiring</p>
             </div>
             <div className="job-divider" />
             <div className="job-item">
               <h3 className="job-title">Reply Coordinator</h3>
-              <p className="job-company">Job Coin</p>
-              <p className="job-location">Remote - Verified</p>
+              <p className="job-company">JOB Token</p>
+              <p className="job-location">Decentralized - Remote</p>
               <p className="job-posted">Actively hiring</p>
             </div>
             <div className="job-divider" />
             <div className="job-item">
               <h3 className="job-title">Payroll Reviewer</h3>
-              <p className="job-company">Job Coin</p>
-              <p className="job-location">Remote - Ops</p>
+              <p className="job-company">JOB Token</p>
+              <p className="job-location">Decentralized - Ops</p>
               <p className="job-posted">Actively hiring</p>
+            </div>
+          </section>
+
+          <section className="card trending-panel">
+            <div className="trending-header">
+              <h2 className="trending-title">Trending in Crypto</h2>
+            </div>
+            <div className="trending-list">
+              <a href="#" className="trending-item">
+                <span className="trending-tag">#JOBCoin</span>
+                <span className="trending-count">12,847 posts</span>
+              </a>
+              <a href="#" className="trending-item">
+                <span className="trending-tag">#WorkForYourCoin</span>
+                <span className="trending-count">8,234 posts</span>
+              </a>
+              <a href="#" className="trending-item">
+                <span className="trending-tag">#GetPaidToShill</span>
+                <span className="trending-count">5,612 posts</span>
+              </a>
+              <a href="#" className="trending-item">
+                <span className="trending-tag">#OpenToWork</span>
+                <span className="trending-count">3,891 posts</span>
+              </a>
             </div>
           </section>
 
@@ -422,22 +489,36 @@ export default function HomePage() {
             </div>
             <ul className="side-list">
               <li>Visible upside for real work</li>
-              <li>Buybacks create demand</li>
-              <li>Payroll makes the pitch concrete</li>
-              <li>Transparent worker payments</li>
+              <li>Public payroll = built-in trust</li>
+              <li>Workers aligned with price</li>
+              <li>No middlemen, direct payout</li>
             </ul>
           </section>
 
           <section className="card cta-panel" id="buy">
             <div className="cta-icon">J</div>
-            <h2 className="cta-title">Start working for the coin</h2>
-            <p className="cta-text">AI took your job. Come work for the coin.</p>
-            <a className="btn btn-primary" href="#top">Buy JOB</a>
-            <a className="btn btn-outline" href="#verified">Apply for Verified</a>
+            <h3 className="cta-title">Start Working</h3>
+            <p className="cta-text">Join the network and get paid for what you already do.</p>
+            <a 
+              href="https://pump.fun/coin/8sXvPdXVfNgfnuVWnJvfyC6mP71p5LPAi3RiVSpump" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+            >
+              Get JOB
+            </a>
+            <a 
+              href="https://x.com/i/communities/1920174889428152689" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="btn btn-outline"
+            >
+              Join Community
+            </a>
           </section>
 
           <div className="footer-links">
-            <a href="#" className="footer-link">Job Coin Corporation 2024</a>
+            <a href="#" className="footer-link">JOB Token 2025</a>
           </div>
         </aside>
       </div>
