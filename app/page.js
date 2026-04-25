@@ -1,278 +1,526 @@
 export default function HomePage() {
   return (
-    <main className="job-page">
+    <main>
       <header className="site-header">
         <div className="shell topbar">
           <a className="brand" href="#top">
-            <span className="brand-mark">JOB</span>
-            <span className="brand-name">Job Coin</span>
+            <div className="brand-icon">J</div>
           </a>
 
-          <div className="search-shell" aria-label="Search">
-            <span className="search-icon">Search</span>
-            <span className="search-copy">workers, payroll, jobs</span>
+          <div className="search-box">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.39zM11 18a7 7 0 1 1 7-7 7 7 0 0 1-7 7z"/>
+            </svg>
+            <input type="text" placeholder="Search JOB" />
           </div>
 
+          <div className="nav-spacer" />
+
           <nav className="site-nav">
-            <a href="#feed">Feed</a>
-            <a href="#payroll">Payroll</a>
-            <a href="#verified">Verified</a>
-            <a href="#jobs">Jobs</a>
-            <a href="#buy">Buy JOB</a>
+            <a href="#feed" className="nav-item active">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23 9v2h-2v7a3 3 0 0 1-3 3h-4v-6h-4v6H6a3 3 0 0 1-3-3v-7H1V9l11-7 5 3.18V2h3v5.09z"/>
+              </svg>
+              <span>Home</span>
+            </a>
+            <a href="#payroll" className="nav-item">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 16v6H3v-6a3 3 0 0 1 3-3h3a3 3 0 0 1 3 3zm5.5-3A3.5 3.5 0 1 0 14 9.5a3.5 3.5 0 0 0 3.5 3.5zm1 2h-2a2.5 2.5 0 0 0-2.5 2.5V22h7v-4.5a2.5 2.5 0 0 0-2.5-2.5zM7.5 2A4.5 4.5 0 1 0 12 6.5 4.49 4.49 0 0 0 7.5 2z"/>
+              </svg>
+              <span>Network</span>
+            </a>
+            <a href="#verified" className="nav-item">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17 6V5a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3v1H2v4a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V6zM9 5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1H9zm10 9a4 4 0 0 1-4 4h-6a4 4 0 0 1-4-4v-1h14z"/>
+              </svg>
+              <span>Roles</span>
+            </a>
+            <a href="#buy" className="nav-item">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M22 17H2a5 5 0 0 1-2-4v-2a1 1 0 0 1 1-1h22a1 1 0 0 1 1 1v2a5 5 0 0 1-2 4zM2 7a5 5 0 0 1 2-4h16a5 5 0 0 1 2 4z"/>
+              </svg>
+              <span>Alerts</span>
+            </a>
+
+            <div className="nav-divider" />
+
+            <a 
+              href="https://pump.fun/coin/8sXvPdXVfNgfnuVWnJvfyC6mP71p5LPAi3RiVSpump" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="nav-cta"
+            >
+              Get Started
+            </a>
+
+            <div className="nav-profile">
+              <div className="nav-avatar">J</div>
+              <span className="nav-label">
+                Me
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M7 10l5 5 5-5z"/>
+                </svg>
+              </span>
+            </div>
           </nav>
         </div>
       </header>
 
       <div className="shell app-shell" id="top">
         <aside className="left-rail">
-          <section className="panel profile-panel">
+          <section className="card profile-card">
             <div className="profile-cover" />
-            <div className="profile-body">
+            <div className="profile-content">
               <div className="profile-avatar">J</div>
-              <h1>Job Coin</h1>
-              <p className="profile-headline">AI took your job. Come work for the coin.</p>
-              <p className="profile-meta">
-                Creator fees buy back JOB. Verified workers get paid for helping the coin grow.
-              </p>
-
+              <h1 className="profile-name">JOB</h1>
+              <p className="profile-title">Work For Your Coin</p>
+              <p className="profile-headline">The job you already do. Now it pays.</p>
+              
+              <div className="open-badge">
+                <span className="badge-dot" />
+                Hiring workers - Earn JOB tokens
+              </div>
+              
+              <div className="profile-divider" />
+              
               <div className="profile-stats">
-                <div>
-                  <span>Verified workers</span>
-                  <strong>27</strong>
+                <div className="stat-row">
+                  <span className="stat-label">Active workers</span>
+                  <span className="stat-value">27</span>
                 </div>
-                <div>
-                  <span>Payroll this cycle</span>
-                  <strong>182,500 JOB</strong>
+                <div className="stat-row">
+                  <span className="stat-label">Connections</span>
+                  <span className="stat-value">420K+</span>
                 </div>
               </div>
             </div>
           </section>
 
-          <section className="panel side-list">
-            <div className="panel-heading">
-              <h2>How it works</h2>
+          <section className="card steps-panel">
+            <div className="steps-header">
+              <h2 className="steps-title">Get Started</h2>
             </div>
-            <ol className="compact-steps">
-              <li>Buy JOB</li>
-              <li>Get verified</li>
-              <li>Work for the coin</li>
-              <li>Get paid in JOB</li>
-            </ol>
+            <div className="steps-list">
+              <div className="step-item">
+                <div className="step-number">1</div>
+                <div className="step-content">
+                  <span className="step-label">Join</span>
+                  <span className="step-desc">Enter via the community</span>
+                </div>
+              </div>
+              <div className="step-item">
+                <div className="step-number">2</div>
+                <div className="step-content">
+                  <span className="step-label">Contribute</span>
+                  <span className="step-desc">Post, share, and engage</span>
+                </div>
+              </div>
+              <div className="step-item">
+                <div className="step-number">3</div>
+                <div className="step-content">
+                  <span className="step-label">Earn</span>
+                  <span className="step-desc">Get paid in JOB tokens</span>
+                </div>
+              </div>
+              <div className="step-item highlight">
+                <div className="step-number">4</div>
+                <div className="step-content">
+                  <span className="step-label">Top Performer</span>
+                  <span className="step-desc">Bonus rewards for standouts</span>
+                </div>
+              </div>
+            </div>
           </section>
 
-          <section className="panel side-list">
-            <div className="panel-heading">
-              <h2>Work types</h2>
+          <section className="card side-panel">
+            <div className="side-panel-header">
+              <h2 className="side-panel-title">Work types</h2>
             </div>
-            <ul className="badge-list">
-              <li>Content</li>
-              <li>Replies</li>
-              <li>Design</li>
-              <li>Community</li>
-              <li>Ops</li>
-            </ul>
+            <div className="tag-list">
+              <span className="tag">Content</span>
+              <span className="tag">Replies</span>
+              <span className="tag">Design</span>
+              <span className="tag">Community</span>
+              <span className="tag">Ops</span>
+            </div>
           </section>
         </aside>
 
         <section className="feed-column" id="feed">
-          <section className="composer panel">
-            <div className="composer-head">
-              <div className="mini-avatar">J</div>
-              <div>
-                <p className="eyebrow">Pinned mission</p>
-                <h2>Turn the coin into the company.</h2>
-              </div>
-            </div>
-
-            <p className="lead-copy">
-              Job Coin is built around one loop: creator fees buy back JOB, the treasury pays
-              verified workers, and workers keep pushing the coin because the upside is visible.
-            </p>
-
-            <div className="action-row">
-              <a className="button button-primary" href="#buy">
-                Buy JOB
-              </a>
-              <a className="button button-secondary" href="#verified">
-                Become Verified
-              </a>
-              <a className="button button-secondary" href="#payroll">
-                View Payroll
-              </a>
+          <section className="card hero-banner">
+            <div className="hero-content">
+              <h2 className="hero-title">Come Work For This Coin</h2>
+              <p className="hero-subtitle">This is not a 9-5 - this is the job you already do</p>
             </div>
           </section>
 
-          <section className="post-card panel">
-            <div className="post-head">
-              <div className="mini-avatar">P</div>
-              <div>
-                <strong>Payroll engine</strong>
-                <span>Creator fees drive buybacks and worker pay</span>
+          <a 
+            href="https://x.com/i/communities/1920174889428152689" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="card composer composer-link"
+          >
+            <div className="composer-row">
+              <div className="composer-avatar">J</div>
+              <div className="composer-input">Start a post about the coin...</div>
+            </div>
+            <div className="composer-actions">
+              <div className="composer-action media">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+                <span>Post on X</span>
+              </div>
+              <div className="composer-action event">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                </svg>
+                <span>Community</span>
+              </div>
+              <div className="composer-action article">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+                <span>Join</span>
               </div>
             </div>
+          </a>
 
-            <h3>The strategy is simple.</h3>
-            <p>
-              Use creator fees to buy back JOB and distribute it to verified workers posting,
-              replying, designing, moderating, and onboarding for the coin.
-            </p>
-
-            <div className="feature-grid">
-              <article>
-                <span>Buyback source</span>
-                <strong>Creator fees</strong>
-              </article>
-              <article>
-                <span>Payout asset</span>
-                <strong>JOB</strong>
-              </article>
-              <article>
-                <span>Who gets paid</span>
-                <strong>Verified workers</strong>
-              </article>
-            </div>
-          </section>
-
-          <section className="post-card panel" id="payroll">
-            <div className="post-head">
-              <div className="mini-avatar">$</div>
-              <div>
-                <strong>Public payroll</strong>
-                <span>Obvious by design</span>
+          <article className="card post">
+            <div className="post-header">
+              <div className="post-avatar">J</div>
+              <div className="post-meta">
+                <div className="post-author">JOB Token</div>
+                <div className="post-author-detail">Work For Your Coin</div>
+                <div className="post-time">
+                  Pinned
+                  <span>{"·"}</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                  </svg>
+                </div>
+              </div>
+              <div className="post-more">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
+                </svg>
               </div>
             </div>
-
-            <h3>People should instantly see workers getting paid.</h3>
-
-            <div className="payroll-strip">
-              <div>
-                <span>Cycle payout</span>
-                <strong>182,500 JOB</strong>
+            <div className="post-content">
+              <h3 className="post-title">The company is the coin. The workers are the team.</h3>
+              <p className="post-text">
+                Creator fees flow back to buy JOB. The treasury pays verified workers. 
+                Workers keep pushing because upside is visible and real. This is not a 9-5. 
+                This is the work you already do online - now it actually pays.
+              </p>
+              <p className="post-highlight">
+                Work for the coin. Get paid by the coin.
+              </p>
+            </div>
+            <div className="post-metrics">
+              <div className="metric">
+                <span className="metric-label">Buyback source</span>
+                <span className="metric-value">Creator fees</span>
               </div>
-              <div>
-                <span>Workers paid</span>
-                <strong>27</strong>
+              <div className="metric">
+                <span className="metric-label">Payout asset</span>
+                <span className="metric-value">JOB</span>
               </div>
-              <div>
-                <span>Fee routing</span>
-                <strong>94%</strong>
+              <div className="metric">
+                <span className="metric-label">Who gets paid</span>
+                <span className="metric-value">Workers</span>
               </div>
             </div>
-
-            <div className="payroll-table" role="table" aria-label="Job Coin payroll table">
-              <div className="table-row table-head" role="row">
-                <span role="columnheader">Worker</span>
-                <span role="columnheader">Role</span>
-                <span role="columnheader">Output</span>
-                <span role="columnheader">Paid</span>
+            <div className="post-engagement">
+              <div className="post-reactions">
+                <div className="reaction-icons">
+                  <div className="reaction-icon like">+</div>
+                  <div className="reaction-icon celebrate">!</div>
+                  <div className="reaction-icon support">*</div>
+                </div>
+                <span>127 reactions</span>
               </div>
-              <div className="table-row" role="row">
-                <span role="cell">worker_01</span>
-                <span role="cell">Content</span>
-                <span role="cell">Clips and posts</span>
-                <span role="cell">22,000 JOB</span>
+              <span>42 comments</span>
+            </div>
+            <div className="post-actions">
+              <div className="post-action">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19.46 11l-3.91-3.91a7 7 0 0 1 1.69-2.74l-.49-.49a9 9 0 0 0-2.34 3.18l-4.87-4.87a1 1 0 0 0-1.42 0L2 8.29a1 1 0 0 0 0 1.42l4.87 4.87a9 9 0 0 0-3.18 2.34l.49.49a7 7 0 0 0 2.74-1.69L11 19.46a1 1 0 0 0 1.42 0l.49-.49-3.91-3.91a1 1 0 0 0-1.42 0l-.49.49 2.83 2.83-2.83 2.83L4 18l2.83-2.83L4 12.34l3.66-3.66 2.83 2.83-2.83 2.83.49.49a1 1 0 0 0 1.42 0l3.91-3.91.49.49a1 1 0 0 0 0-1.42z"/>
+                </svg>
+                <span>Like</span>
               </div>
-              <div className="table-row" role="row">
-                <span role="cell">worker_02</span>
-                <span role="cell">Replies</span>
-                <span role="cell">Reply ops and joins</span>
-                <span role="cell">17,500 JOB</span>
+              <div className="post-action">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M7 9h10v1H7zm0 4h7v-1H7zm16-2a10 10 0 0 1-10 10H3v-3h10a7 7 0 1 0-7-7v2H3V3h10a10 10 0 0 1 10 10z"/>
+                </svg>
+                <span>Comment</span>
               </div>
-              <div className="table-row" role="row">
-                <span role="cell">worker_03</span>
-                <span role="cell">Threads</span>
-                <span role="cell">Long-form posts</span>
-                <span role="cell">14,000 JOB</span>
+              <div className="post-action">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M23 12l-4.61 7H16l4-6H8a7 7 0 0 1-7-7V3h2v3a5 5 0 0 0 5 5h12l-4-6h2.39z"/>
+                </svg>
+                <span>Repost</span>
               </div>
-              <div className="table-row" role="row">
-                <span role="cell">worker_04</span>
-                <span role="cell">Community</span>
-                <span role="cell">Moderation and onboarding</span>
-                <span role="cell">11,500 JOB</span>
+              <div className="post-action">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M21 3L0 10l7.66 4.26L16 8l-6.26 8.34L14 24l7-21z"/>
+                </svg>
+                <span>Send</span>
               </div>
             </div>
-          </section>
+          </article>
 
-          <section className="post-card panel" id="verified">
-            <div className="post-head">
-              <div className="mini-avatar">V</div>
-              <div>
-                <strong>Verified worker</strong>
-                <span>No badge, no fees</span>
+          <article className="card post" id="payroll">
+            <div className="payroll-header">
+              <h3 className="payroll-title">Public Payroll</h3>
+              <span className="payroll-badge">Live</span>
+            </div>
+            <div className="post-content">
+              <p className="post-text">
+                Transparency builds trust. Every payout is visible. See exactly who gets paid and why.
+              </p>
+            </div>
+            <div className="post-metrics">
+              <div className="metric">
+                <span className="metric-label">Cycle payout</span>
+                <span className="metric-value">182,500 JOB</span>
+              </div>
+              <div className="metric">
+                <span className="metric-label">Workers paid</span>
+                <span className="metric-value">27</span>
+              </div>
+              <div className="metric">
+                <span className="metric-label">Fee routing</span>
+                <span className="metric-value">94%</span>
               </div>
             </div>
-
-            <h3>You need the badge to get paid.</h3>
-            <p>
-              Payroll is only for approved accounts with a linked wallet and tracked output. The
-              point is a real worker network, not random wallet farming.
-            </p>
-
-            <div className="verification-grid">
-              <article className="verification-item">
-                <span>Identity</span>
-                <strong>Wallet + account</strong>
-              </article>
-              <article className="verification-item">
-                <span>Track</span>
-                <strong>Content, growth, ops</strong>
-              </article>
-              <article className="verification-item">
-                <span>Approval</span>
-                <strong>Verified worker badge</strong>
-              </article>
+            <div className="payroll-table">
+              <div className="table-row table-head">
+                <span>Worker</span>
+                <span>Role</span>
+                <span>Output</span>
+                <span>Paid</span>
+              </div>
+              <div className="table-row">
+                <span>worker_01</span>
+                <span>Content</span>
+                <span>Clips and posts</span>
+                <span>22,000 JOB</span>
+              </div>
+              <div className="table-row">
+                <span>worker_02</span>
+                <span>Replies</span>
+                <span>Reply ops and joins</span>
+                <span>17,500 JOB</span>
+              </div>
+              <div className="table-row">
+                <span>worker_03</span>
+                <span>Threads</span>
+                <span>Long-form posts</span>
+                <span>14,000 JOB</span>
+              </div>
+              <div className="table-row">
+                <span>worker_04</span>
+                <span>Community</span>
+                <span>Moderation</span>
+                <span>11,500 JOB</span>
+              </div>
             </div>
-          </section>
+            <div className="post-engagement">
+              <div className="post-reactions">
+                <div className="reaction-icons">
+                  <div className="reaction-icon like">+</div>
+                  <div className="reaction-icon celebrate">!</div>
+                </div>
+                <span>89 reactions</span>
+              </div>
+              <span>18 comments</span>
+            </div>
+            <div className="post-actions">
+              <div className="post-action">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19.46 11l-3.91-3.91a7 7 0 0 1 1.69-2.74l-.49-.49a9 9 0 0 0-2.34 3.18l-4.87-4.87a1 1 0 0 0-1.42 0L2 8.29a1 1 0 0 0 0 1.42l4.87 4.87a9 9 0 0 0-3.18 2.34l.49.49a7 7 0 0 0 2.74-1.69L11 19.46a1 1 0 0 0 1.42 0l.49-.49-3.91-3.91a1 1 0 0 0-1.42 0l-.49.49 2.83 2.83-2.83 2.83L4 18l2.83-2.83L4 12.34l3.66-3.66 2.83 2.83-2.83 2.83.49.49a1 1 0 0 0 1.42 0l3.91-3.91.49.49a1 1 0 0 0 0-1.42z"/>
+                </svg>
+                <span>Like</span>
+              </div>
+              <div className="post-action">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M7 9h10v1H7zm0 4h7v-1H7zm16-2a10 10 0 0 1-10 10H3v-3h10a7 7 0 1 0-7-7v2H3V3h10a10 10 0 0 1 10 10z"/>
+                </svg>
+                <span>Comment</span>
+              </div>
+              <div className="post-action">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M23 12l-4.61 7H16l4-6H8a7 7 0 0 1-7-7V3h2v3a5 5 0 0 0 5 5h12l-4-6h2.39z"/>
+                </svg>
+                <span>Repost</span>
+              </div>
+              <div className="post-action">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M21 3L0 10l7.66 4.26L16 8l-6.26 8.34L14 24l7-21z"/>
+                </svg>
+                <span>Send</span>
+              </div>
+            </div>
+          </article>
+
+          <article className="card post" id="verified">
+            <div className="post-header">
+              <div className="post-avatar verified-avatar">V</div>
+              <div className="post-meta">
+                <div className="post-author">Verified Workers</div>
+                <div className="post-author-detail">No badge, no payout. Get verified to start earning.</div>
+                <div className="post-time">2h ago</div>
+              </div>
+            </div>
+            <div className="post-content">
+              <h3 className="post-title">You need the badge to get paid.</h3>
+              <p className="post-text">
+                Payroll is only for approved accounts with a linked wallet and tracked output. The
+                point is a real worker network, not random wallet farming.
+              </p>
+            </div>
+            <div className="post-metrics">
+              <div className="metric">
+                <span className="metric-label">Identity</span>
+                <span className="metric-value">Wallet + account</span>
+              </div>
+              <div className="metric">
+                <span className="metric-label">Track</span>
+                <span className="metric-value">Content, ops</span>
+              </div>
+              <div className="metric">
+                <span className="metric-label">Approval</span>
+                <span className="metric-value">Verified badge</span>
+              </div>
+            </div>
+            <div className="post-engagement">
+              <div className="post-reactions">
+                <div className="reaction-icons">
+                  <div className="reaction-icon like">+</div>
+                  <div className="reaction-icon support">*</div>
+                </div>
+                <span>64 reactions</span>
+              </div>
+              <span>23 comments</span>
+            </div>
+            <div className="post-actions">
+              <div className="post-action">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19.46 11l-3.91-3.91a7 7 0 0 1 1.69-2.74l-.49-.49a9 9 0 0 0-2.34 3.18l-4.87-4.87a1 1 0 0 0-1.42 0L2 8.29a1 1 0 0 0 0 1.42l4.87 4.87a9 9 0 0 0-3.18 2.34l.49.49a7 7 0 0 0 2.74-1.69L11 19.46a1 1 0 0 0 1.42 0l.49-.49-3.91-3.91a1 1 0 0 0-1.42 0l-.49.49 2.83 2.83-2.83 2.83L4 18l2.83-2.83L4 12.34l3.66-3.66 2.83 2.83-2.83 2.83.49.49a1 1 0 0 0 1.42 0l3.91-3.91.49.49a1 1 0 0 0 0-1.42z"/>
+                </svg>
+                <span>Like</span>
+              </div>
+              <div className="post-action">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M7 9h10v1H7zm0 4h7v-1H7zm16-2a10 10 0 0 1-10 10H3v-3h10a7 7 0 1 0-7-7v2H3V3h10a10 10 0 0 1 10 10z"/>
+                </svg>
+                <span>Comment</span>
+              </div>
+              <div className="post-action">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M23 12l-4.61 7H16l4-6H8a7 7 0 0 1-7-7V3h2v3a5 5 0 0 0 5 5h12l-4-6h2.39z"/>
+                </svg>
+                <span>Repost</span>
+              </div>
+              <div className="post-action">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M21 3L0 10l7.66 4.26L16 8l-6.26 8.34L14 24l7-21z"/>
+                </svg>
+                <span>Send</span>
+              </div>
+            </div>
+          </article>
         </section>
 
         <aside className="right-rail">
-          <section className="panel side-list" id="jobs">
-            <div className="panel-heading">
-              <h2>Open jobs</h2>
+          <section className="card jobs-card" id="jobs">
+            <div className="jobs-header">
+              <h2 className="jobs-title">Open roles</h2>
             </div>
-
-            <div className="job-list">
-              <article className="job-item">
-                <strong>Content operator</strong>
-                <span>Remote - Verified</span>
-                <p>Posts, clips, edits.</p>
-              </article>
-              <article className="job-item">
-                <strong>Reply coordinator</strong>
-                <span>Remote - Verified</span>
-                <p>Replies, campaigns, raids.</p>
-              </article>
-              <article className="job-item">
-                <strong>Payroll reviewer</strong>
-                <span>Remote - Ops</span>
-                <p>Check output and payouts.</p>
-              </article>
+            <div className="job-item">
+              <h3 className="job-title">Content Operator</h3>
+              <p className="job-company">JOB Token</p>
+              <p className="job-location">Decentralized - Remote</p>
+              <p className="job-posted">Actively hiring</p>
+            </div>
+            <div className="job-divider" />
+            <div className="job-item">
+              <h3 className="job-title">Reply Coordinator</h3>
+              <p className="job-company">JOB Token</p>
+              <p className="job-location">Decentralized - Remote</p>
+              <p className="job-posted">Actively hiring</p>
+            </div>
+            <div className="job-divider" />
+            <div className="job-item">
+              <h3 className="job-title">Payroll Reviewer</h3>
+              <p className="job-company">JOB Token</p>
+              <p className="job-location">Decentralized - Ops</p>
+              <p className="job-posted">Actively hiring</p>
             </div>
           </section>
 
-          <section className="panel side-list">
-            <div className="panel-heading">
-              <h2>Why it works</h2>
+          <section className="card trending-panel">
+            <div className="trending-header">
+              <h2 className="trending-title">Trending in Crypto</h2>
             </div>
+            <div className="trending-list">
+              <a href="#" className="trending-item">
+                <span className="trending-tag">#JOBCoin</span>
+                <span className="trending-count">12,847 posts</span>
+              </a>
+              <a href="#" className="trending-item">
+                <span className="trending-tag">#WorkForYourCoin</span>
+                <span className="trending-count">8,234 posts</span>
+              </a>
+              <a href="#" className="trending-item">
+                <span className="trending-tag">#GetPaidToShill</span>
+                <span className="trending-count">5,612 posts</span>
+              </a>
+              <a href="#" className="trending-item">
+                <span className="trending-tag">#OpenToWork</span>
+                <span className="trending-count">3,891 posts</span>
+              </a>
+            </div>
+          </section>
 
-            <ul className="insight-list">
+          <section className="card side-panel">
+            <div className="side-panel-header">
+              <h2 className="side-panel-title">Why it works</h2>
+            </div>
+            <ul className="side-list">
               <li>Visible upside for real work</li>
-              <li>Buybacks create demand</li>
-              <li>Payroll makes the pitch concrete</li>
+              <li>Public payroll = built-in trust</li>
+              <li>Workers aligned with price</li>
+              <li>No middlemen, direct payout</li>
             </ul>
           </section>
 
-          <section className="panel cta-panel" id="buy">
-            <p className="eyebrow">Start here</p>
-            <h2>Buy JOB. Get verified. Work for the coin.</h2>
-            <p>AI took your job. Come work for the coin.</p>
-            <a className="button button-primary" href="#top">
-              Buy JOB
+          <section className="card cta-panel" id="buy">
+            <div className="cta-icon">J</div>
+            <h3 className="cta-title">Start Working</h3>
+            <p className="cta-text">Join the network and get paid for what you already do.</p>
+            <a 
+              href="https://pump.fun/coin/8sXvPdXVfNgfnuVWnJvfyC6mP71p5LPAi3RiVSpump" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+            >
+              Get JOB
             </a>
-            <a className="button button-secondary" href="#verified">
-              Apply for Verified Worker
+            <a 
+              href="https://x.com/i/communities/1920174889428152689" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="btn btn-outline"
+            >
+              Join Community
             </a>
           </section>
+
+          <div className="footer-links">
+            <a href="#" className="footer-link">JOB Token 2025</a>
+          </div>
         </aside>
       </div>
     </main>
