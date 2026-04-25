@@ -1,17 +1,15 @@
 {
-  "name": "lotto-site",
+  "name": "job-coin",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "$LOTTO on-chain lottery website",
+  "description": "Job Coin website",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "draw": "node scripts/run-draw.js"
+    "start": "next start"
   },
   "dependencies": {
-    "better-sqlite3": "^12.9.0",
     "next": "^16.2.4",
     "react": "^19.2.5",
     "react-dom": "^19.2.5"
