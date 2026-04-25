@@ -4,7 +4,7 @@ export default function HomePage() {
       <header className="site-header">
         <div className="shell topbar">
           <a className="brand" href="#top">
-            <img src="/images/logo.png" alt="JOB" className="brand-logo" />
+            <div className="brand-icon">J</div>
           </a>
 
           <div className="search-box">
@@ -147,8 +147,11 @@ export default function HomePage() {
         </aside>
 
         <section className="feed-column" id="feed">
-          <section className="banner-section">
-            <img src="/images/banner.png" alt="Job | Come Work For This Coin" className="banner-image" />
+          <section className="card hero-banner">
+            <div className="hero-content">
+              <h2 className="hero-title">Come Work For This Coin</h2>
+              <p className="hero-subtitle">This is not a 9-5 - this is the job you already do</p>
+            </div>
           </section>
 
           <a 
