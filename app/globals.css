@@ -367,9 +367,45 @@ a:hover {
   font-weight: 600;
 }
 
+/* Banner Placeholder */
+.banner-placeholder {
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed var(--line-strong);
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.banner-content {
+  text-align: center;
+}
+
+.banner-text {
+  font-size: 16px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
 /* Composer */
 .composer {
   padding: 16px;
+}
+
+.composer-link {
+  display: block;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+}
+
+.composer-link:hover {
+  text-decoration: none;
+  box-shadow: var(--shadow), 0 4px 12px rgba(0,0,0,0.08);
+  transform: translateY(-1px);
 }
 
 .composer-row {

@@ -108,7 +108,18 @@ export default function HomePage() {
         </aside>
 
         <section className="feed-column" id="feed">
-          <section className="card composer">
+          <section className="banner-placeholder">
+            <div className="banner-content">
+              <span className="banner-text">Banner</span>
+            </div>
+          </section>
+
+          <a 
+            href="https://x.com/i/communities/1920174889428152689" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="card composer composer-link"
+          >
             <div className="composer-row">
               <div className="composer-avatar">J</div>
               <div className="composer-input">Start a post about the coin...</div>
@@ -116,24 +127,24 @@ export default function HomePage() {
             <div className="composer-actions">
               <div className="composer-action media">
                 <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M19 4H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm1 13-3.8-4.5-2.2 2.63L11.2 12 6 18.5V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1z"/>
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                 </svg>
-                <span>Media</span>
+                <span>Post on X</span>
               </div>
               <div className="composer-action event">
                 <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M3 3v15a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V3zm13 1.75A1.25 1.25 0 1 1 14.75 6 1.25 1.25 0 0 1 16 4.75zm-8 0A1.25 1.25 0 1 1 6.75 6 1.25 1.25 0 0 1 8 4.75zM19 18a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V9h14zm-5.9-3a1 1 0 0 0-1.4 0l-1.2 1.6L9 15.1a1 1 0 0 0-1.4 0l-.6.9h10l-2.4-3.5z"/>
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
                 </svg>
-                <span>Event</span>
+                <span>Community</span>
               </div>
               <div className="composer-action article">
                 <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M21 3v2H3V3zm-6 6h6V7h-6zm0 4h6v-2h-6zm0 4h6v-2h-6zM3 21h18v-2H3zM13 7H3v10h10z"/>
+                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
                 </svg>
-                <span>Write article</span>
+                <span>Join</span>
               </div>
             </div>
-          </section>
+          </a>
 
           <article className="card post">
             <div className="post-header">
