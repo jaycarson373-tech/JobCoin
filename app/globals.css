@@ -68,17 +68,11 @@ a:hover {
   flex-shrink: 0;
 }
 
-.brand-icon {
+.brand-logo {
   width: 34px;
   height: 34px;
-  background: var(--blue);
   border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-weight: 700;
-  font-size: 20px;
+  object-fit: contain;
 }
 
 .search-box {
@@ -493,28 +487,17 @@ a:hover {
   font-weight: 600;
 }
 
-/* Banner Placeholder */
-.banner-placeholder {
-  background: var(--surface);
+/* Banner Section */
+.banner-section {
   border-radius: var(--radius);
   box-shadow: var(--shadow-sm);
   overflow: hidden;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px dashed var(--line-strong);
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
 
-.banner-content {
-  text-align: center;
-}
-
-.banner-text {
-  font-size: 16px;
-  color: var(--text-secondary);
-  font-weight: 500;
+.banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Composer */
